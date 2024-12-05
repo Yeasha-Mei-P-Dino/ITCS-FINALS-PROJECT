@@ -1,0 +1,5 @@
+name = input("Please type your name --> ")
+print("\n\t\t\t\t\t\t\t\t\t\t * \n\t\t\t\t\t\t\t\t\t       * * *")
+print("\t\t\t\t\t\t\t\t\t     * * * * * \n\t\t\t\t\t\t\t\t\t   \b\b  * * * * * * * ")
+print("\t\t\t\t\t\t\t\t         * * * * * * * * * \n\t\t\t\t\t\t\t\t       *      " + name + "      *")
+print("\t\t\t\t\t\t\t\t\t * * * * * * * * * \n\t\t\t\t\t\t\t\t\t     \b\b* * * * * * *\n\t\t\t\t\t\t\t\t\t     * * * * * \n\t\t\t\t\t\t\t\t\t       * * * \n\t\t\t\t\t\t\t\t\t\t *")
