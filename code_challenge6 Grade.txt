@@ -1,0 +1,27 @@
+#Program that will accept Prelim, Midterm, Semi-final, Final, Quiz, and Project
+
+name = input("\n\t Name: ")
+pre = eval(input("\n\t Enter your Prelim Grade: "))
+mid = eval(input("\n\t Enter your Midterm Grade: "))
+semi = eval(input("\n\t Enter your Semi-final Grade: "))
+final= eval(input("\n\t Enter your Final Grade: "))
+quiz = eval(input("\n\t Enter your Quiz Grade: "))
+project = eval(input("\n\t Enter your Project Grade: "))
+
+if (pre >= 65 and pre <= 100) and (mid >= 65 and mid <= 100) and (semi >= 65 and semi <= 100) and (final >= 65 and final <= 100) and (quiz >= 65 and quiz <= 100) and (project >= 65 and project <= 100):
+	fgrade = (pre * 0.15) + (mid * 0.15) + (semi * 0.15) + (final * 0.15) + (quiz * 0.25) + (project * 0.15)
+	#nested condition
+	if fgrade >= 75 :
+		print("\n\t Congratulations! You passed the course.")
+	else:
+		print("\n\t Sorry, you failed the course. Better luck next time.")
+	print("\n\t Your grade is", fgrade)
+
+else:
+	print("\n\t Invalid grade number.")
+
+
+
+
+
+
