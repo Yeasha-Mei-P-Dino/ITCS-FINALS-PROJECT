@@ -1,0 +1,60 @@
+#Sell and give discount
+
+name = input("\n\t Hi dear shopper! Your name is: ")
+
+isFood = input("\t Are you going to buy some grocery (yes / no): ")
+	
+if isFood.lower() == "yes":
+	print("\n\t Which of these food did you buy? \n\t Bread - 56.00  Pork belly - 230.25   Barbecue - 130.65   Fish - 154.25   Frozen Food - 90.75 \n\t Pasta - 147.00  Rice - 58.45  \n\t Cooking oil - 35.60   Ketchup - 54.89   Mayonnaise \n\t Cabbage - 54  Carrot - 25  Onion - 36.75  \n\t Apple - 10.00   Orange - 13.05   Mango - 11.60   Watermelon - 67.90  Grape - 100.25   Banana - 62.80  \n\t Cereals - 50.75   Gulaman - 20.75     Vanilla extract - 47.25   Milk - 79.50 Cheese - 43.45   Egg - 8.40 \n\t Potato chips - 16.75   Chocolate - 25.60   Marshmallow (big pack) - 60.50 ")
+	
+	price1 = eval(input("\n\t Enter your shopping cart's food price (maximum of 3): "))
+	if price1 <= 230.26:
+		price2 = eval(input("\n\t Enter your shopping cart's food price: "))
+		price3 = eval(input("\n\t Enter your shopping cart's food price: "))
+		print("\n\t Tax: 12.3% ")	
+
+		tot = price1 + price2 + price3
+		tot2 = round(tot  * 0.123, 2)
+		amt = tot2 + tot
+
+		# The Discount for senior is 5.2%
+		print("\n\t Your total amount is", amt ,"\b. ")
+		pay = input("\n\t Cash or card: ")
+		if pay.lower() == "cash":
+			payment = eval(input("\n\t How much will you pay? "))
+			total = round(payment - amt, 2)
+			Age = eval(input("\n\t By the way, how old are you: "))
+			if Age >= 60:
+				print("\n\t So you're a senior? Then you'll have 5.2% discount for your grocery. ")
+				dis = amt * 0.052
+				discount = amt - dis
+				change = round(payment - discount, 2)
+				print(f"\n\t Your change is {change} \b. ")
+				print(f"\n\t Thank you for shopping! See you again dear shopper, {name} ^W^. ")
+
+			else:
+				print(f"\n\t Your change is {total} \b. ")
+				print(f"\n\t Thanks for shopping! See you again dear shopper, {name} ^W^. ")
+
+		elif pay.lower() == "card":
+			Age = eval(input("\n\t By the way, how old are you: "))
+			if Age >= 60:
+				print("\n\t So you're a senior? Then you'll have 5.2% discount for your grocery. ")
+				dis = amt * 0.052
+				discount = round(amt - dis, 2)
+				print(f"\n\t Your card will be reduced with a total of {discount}.")
+				print(f"\n\t Thank you for shopping! See you again dear shopper, {name} ^W^. ")
+
+			else:
+				print(f"\n\t Your card will be reduced with a total of {amt}.")
+				print(f"\n\t Thanks for shopping! See you again dear shopper, {name} ^W^. ")
+
+		else:
+			print("\n\t You did not state your way of payment. Try again.")
+	
+	
+	else:
+		print("\n\t The amount you entered is beyond the limit. \n\t Try again. ")
+	
+else:
+	print("\n\t Hmmm... Well, thank you for coming by. Until next time. ")
