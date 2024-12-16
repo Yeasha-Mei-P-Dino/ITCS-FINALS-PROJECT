@@ -22,20 +22,20 @@ LgKnown = input("\t Please type your Language/s known: ")
 Hobby = input("\t Please type at least 2 Hobbies related to IT: ")
 Sk = input("\t Please type your 3 Skills: ")
 
-EDetails = input("\n\t\t\t\t EDUCATIONAL BACKGROUND ")
+print("\n\t\t\t\t EDUCATIONAL BACKGROUND ")
 ESch = input("\n\t Please type your Elementary School Name: ")
 HSch = input("\t Please type your High School Name: ")
 Col = input("\t Please type your College School Name: ")
 Cou = input("\t Please type your Chosen Course: ")
 Sec = input("\t Please type your Section: ")
 
-FBg = input("\n\t\t\t\t FAMILY DETAILS")
+print("\n\t\t\t\t FAMILY DETAILS")
 Fn = input("\t Father: ")
 Fcn = input("\t Contact No.: ") 
 Mn = input("\t Mother: ")
 Mcn = input("\t Contact No.: ")
 
-CtD = input("\n\t\t\t\t CONTACT DETAILS ")
+print("\n\t\t\t\t CONTACT DETAILS ")
 Cnt = input("\t Contact No.: ")
 EAd = input("\t E-mail Address: ")
 
