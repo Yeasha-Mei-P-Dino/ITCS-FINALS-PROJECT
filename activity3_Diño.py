@@ -40,27 +40,3 @@ Cnt = input("\t Contact No.: ")
 EAd = input("\t E-mail Address: ")
 
 print("\n\n\n\n\t\t\t\t Hi, I am" , full_name, gender , "and I am" , age , "years old. I was born on" , BDate , "at" , BPlace, ". \n\t I am" , Height , "tall and weighs", Weight , "with a blood type of" , Btype , ". I live in", StrtAd, Brgy, CitAd, "," , Zip, ", in" , ProvAd , ". \n\t My status is \t" , CvStatus , ", and i'm a" , Nat , "and is a " , Rel , ". I know" , LgKnown , "and my hobbies are" , Hobby , "while my \n\t skills are" , Sk , ". \n\t\t\t I finished my primary education at" , ESch , ", while my secondary education happened at" , HSch , ". \n\t I'm currently studying at" , Col, "with a course" , Cou , ", in section", Sec , ". \n\t My father is" , Fn , "and my mother is" , Mn, ".  You can contact me with my cellphone number," , Cnt , "and an e-mail of \n\t" , EAd,"." )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
