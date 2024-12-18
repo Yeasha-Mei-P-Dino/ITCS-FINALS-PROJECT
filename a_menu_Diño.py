@@ -517,7 +517,7 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 2 ===")
             from challenge_files import cc2
             cc2()
-
+            continue
         elif sub2 == "3a":
             arith() 
             print("\n\t\t\t\t === Code Challenge 4 ===")
@@ -526,27 +526,27 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 5 ===")
             from challenge_files import cc5
             cc5()
-
-            pass
+            continue
+            
         elif sub2 == "4a": 
             assign()
             print("\n\t\t\t\t === Code Challenge 7 ===")
             from challenge_files import cc7
             cc7()
-
-            pass
+            continue
         elif sub2 == "5a": 
             rel()
             print("\n\t\t\t\t === Code Challenge 6 ===")
             from challenge_files import cc6
             cc6()
+            continue
 
         elif sub2 == "6a": 
             logic()
             print("\n\t\t\t\t === Code Challenge 6 ===")
             from challenge_files import cc6
             cc6()
-
+            continue
             
         elif sub2 == "7a": 
             con()
@@ -556,6 +556,7 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 7 ===")
             from challenge_files import cc7
             cc7()
+            continue
 
         elif sub2 == "8a": 
             f_loop()
@@ -595,6 +596,7 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 16 ===")
             from challenge_files import cc16
             cc16()
+            continue
             
         else:
             close = input("Are you trying to exit? ")
