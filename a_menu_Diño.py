@@ -1,5 +1,4 @@
-#Compilation of all the lessons in ITCS102 
-#Without import of code challenges
+#Compilation of all the lessons in ITCS102
 import os
 import time
 
@@ -444,15 +443,17 @@ while start:   #Main options
             print("\t === This is about DOCUMENTATION STRING ===")
             print("\n\t Docstring is a string used to document a Python module, class, function or method. ")
             print("\n\t\t\t\t === Activity 23 ===")
-            print("\t from activity23 import factorial \n f'n\t The factorial of 5 is {factorial(5)}' and type")
-            print("\t help(factorial) to display docstrings with instruction/note")
+            from activity23 import factorial 
+            print(f"\n\t The factorial of 5 is {factorial(5)}")
+            help(factorial)
             continue
 
         elif sub == "13": # MODULE
             print("\n\t Module are files that contain python codes that uses the word 'import' ")
             print("\n\t Example:   from activity24 import factorial")
             print("\n\t\t\t\t === Activity 24 ===")
-            print("\n\t from activity24 import factorial \n\t as well as import os.")
+            from activity24 import factorial
+            print(f"\n\t The factorial of 7 is {factorial(7)}")
             continue
 
         elif sub == "14": # LIST
@@ -493,22 +494,9 @@ while start:   #Main options
         if sub2 == "1a": 
             print_state()
             print("\n\t\t\t\t === Code Challenge 3 ===")
-            full_name = input("\n\n\t\t\t\t\t Bio-Data \n\n\t Please type your Name: ")
-            gender = input("\t Please type your Gender: ")
-            age = input("\t Please type your Age: ")
-            BDate = input("\t Please type your Date of Birth: ")
-            Brgy = input("\t Please type your Barangay name: ")
-            ProvAd = input("\t Please type your Provincial Name: ")
-            print("\n\t\t\t\t FAMILY DETAILS")
-            Fn = input("\t Father's name: ")
-            Mn = input("\t Mother's name: ")
-            print("\n\t\t\t\t CONTACT DETAILS ")
-            ConDe = input("\t Contact No.: ")
-            ConD = input("\t E-mail Address: ")
-            print("\n\n\t\t\t Hi, I am" , full_name, gender , "and I am" , age , "years old. I was born on" , 
-                BDate , " I live in", Brgy, ProvAd, ". \n My father is" , Fn , "and my mother is" , Mn, 
-                ".  You can contact me with my cellphone number," , ConDe , "and an e-mail of \n\t" , ConD,"." )
-                    
+            from challenge_files import cc3
+            cc3()
+            
         elif sub2 == "2a": 
             esc()
             print("\n\t\t\t\t === Code Challenge 1 ===")
@@ -517,7 +505,7 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 2 ===")
             from challenge_files import cc2
             cc2()
-            continue
+
         elif sub2 == "3a":
             arith() 
             print("\n\t\t\t\t === Code Challenge 4 ===")
@@ -526,27 +514,27 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 5 ===")
             from challenge_files import cc5
             cc5()
-            continue
+
             
         elif sub2 == "4a": 
             assign()
             print("\n\t\t\t\t === Code Challenge 7 ===")
             from challenge_files import cc7
             cc7()
-            continue
+
+            pass
         elif sub2 == "5a": 
             rel()
             print("\n\t\t\t\t === Code Challenge 6 ===")
             from challenge_files import cc6
             cc6()
-            continue
 
         elif sub2 == "6a": 
             logic()
             print("\n\t\t\t\t === Code Challenge 6 ===")
             from challenge_files import cc6
             cc6()
-            continue
+
             
         elif sub2 == "7a": 
             con()
@@ -556,7 +544,6 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 7 ===")
             from challenge_files import cc7
             cc7()
-            continue
 
         elif sub2 == "8a": 
             f_loop()
@@ -596,7 +583,6 @@ while start:   #Main options
             print("\n\t\t\t\t === Code Challenge 16 ===")
             from challenge_files import cc16
             cc16()
-            continue
             
         else:
             close = input("Are you trying to exit? ")
