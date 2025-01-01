@@ -1,6 +1,7 @@
 import os
 import time #Christmas tree and greetings for viewer 
 
+
 def tri(n):
     for i in range(n):
         for j in range(n-1):
